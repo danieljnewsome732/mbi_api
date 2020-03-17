@@ -23,7 +23,7 @@ class Config:
 
 class Production(Config):
     """Production config."""
-    PORT=$PORT
+    PORT = os.environ.get("PORT")
     DEBUG = False
     THREADS = 8
 
@@ -31,7 +31,6 @@ class Production(Config):
 class Development(Config):
     """Development config."""
     DEBUG = False
-
 
 class Staging(Config):
     """Development config."""
