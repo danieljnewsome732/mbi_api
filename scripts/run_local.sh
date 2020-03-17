@@ -7,4 +7,6 @@ python3 -m venv .env
 
 . ./scripts/env_prepare.sh
 
+export ENV="local"
+
 python mbi_api/manage.py run

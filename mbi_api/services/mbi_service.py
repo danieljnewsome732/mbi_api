@@ -5,13 +5,6 @@ import random
 import string
 import re
 
-from datetime import datetime
-from dateutil.relativedelta import relativedelta
-
-from passlib.hash import pbkdf2_sha256
-
-from matchbox.queries.error import DocumentDoesNotExists
-
 from mbi_api.util.errors import MbiApiNotAuthorized
 
 

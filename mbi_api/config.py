@@ -30,6 +30,8 @@ class Production(Config):
 
 class Development(Config):
     """Development config."""
+    DEBUG = False
+
 
 class Staging(Config):
     """Development config."""
