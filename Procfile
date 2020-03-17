@@ -1,2 +1,1 @@
-export ENV="local"
-python mbi_api/manage.py run
+web: waitress-serve --port=$PORT mbi_api.wsgi:application
