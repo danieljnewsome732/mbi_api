@@ -1,1 +1,1 @@
-web: waitress-serve --port=$PORT mbi_api.wsgi:application
+web: ./scripts/run_local.sh
