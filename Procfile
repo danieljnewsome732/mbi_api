@@ -1,1 +1,1 @@
-web: gunicorn mbi_api.app:mbi_app 
+web: ./scripts/run_local.sh

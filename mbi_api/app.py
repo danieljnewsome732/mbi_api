@@ -5,7 +5,6 @@ import os
 
 from flask import Flask
 from flask_cors import CORS
-from flask.logging import default_handler
 from mbi_api.config import config_by_name
 
 
@@ -31,7 +30,6 @@ def init_logging(app):
     handler = logging.StreamHandler(sys.stdout)
     handler.setFormatter(logging.Formatter(app.config['LOG_FORMAT']))
     app.logger.setLevel(app.config['LOG_LEVEL'])
-    app.logger.removeHandler(default_handler)
     app.logger.addHandler(handler)
     app.logger.debug(f'logger name={app.logger.name} level={app.config["LOG_LEVEL"]}')
     logging.getLogger('flask_cors').level = logging.DEBUG

@@ -23,7 +23,7 @@ class Config:
 
 class Production(Config):
     """Production config."""
-
+    PORT=$PORT
     DEBUG = False
     THREADS = 8
 
