@@ -5,7 +5,7 @@ import os
 
 from flask import Flask
 from flask_cors import CORS
-from config import config_by_name
+from mbi_api.config import config_by_name
 
 
 def create_app(config_name="dev"):

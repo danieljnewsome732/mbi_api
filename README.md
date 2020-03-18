@@ -12,6 +12,8 @@ No database at this time
 ```console
 $ brew update && brew upgrade python
 
+$ chmod +x ./scripts/run_local.sh  # might need once
+
 $ ./scripts/run_local.sh 
 
 ```
