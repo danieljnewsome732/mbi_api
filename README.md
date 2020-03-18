@@ -1,10 +1,11 @@
 # mbi_api
 
-This API will validate and create Medicare Benefir Numbers according to the Jan 1 2020 standards
+### This API will validate and create Medicare Benefit Numbers
+(according to the Jan 1 2020 standards)
 
 ## Database
 
-No database yet
+No database at this time
 
 ## Developing
 
@@ -24,7 +25,20 @@ $ xcode-select --install
 $ pip3 install psutil 
 ```
 
-## Auth 
+## Deployment
+
+Pushing to `master` branch will give an automated deployment on heroku
+
+```bash
+# If web worker does not start
+$ heroku ps:scale web=1 --app=mbi-spa
+
+# To debug problems
+$ heroku logs --app mbi-api
+
+```
+
+## API Auth 
 
 None required at this time
 
