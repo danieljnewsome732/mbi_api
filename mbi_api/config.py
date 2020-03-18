@@ -8,7 +8,7 @@ class Config:
     DEBUG = True
     TESTING = False
     HOST = '0.0.0.0'
-    PORT = 3030
+    PORT = os.environ.get("PORT", "3030")
     THREADS = 4
 
     # Use the LOG_LEVEL var if it's present, so that someone trying to debug the service can do `export LOG_LEVEL=DEBUG`
