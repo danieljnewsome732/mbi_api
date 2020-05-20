@@ -11,7 +11,7 @@ flask-restplus==0.13.0
 Flask-Script==2.0.6
 grpcio==1.24.1
 gunicorn==19.9.0
-httplib2==0.14.0
+httplib2==0.18.0
 idna==2.8
 importlib-metadata==0.23
 iso8601==0.1.12
